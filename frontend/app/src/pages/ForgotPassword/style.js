@@ -6,7 +6,7 @@ export const Container = styled.div `
     min-height: 100vh;
     max-width: 100vw;
     
-    background-color: var(--Background-Color);
+    background-color: transparent;
 `
 
 export const ContainerWithImage = styled.picture `
@@ -24,6 +24,7 @@ export const image = styled.img `
     justify-content: center;
     align-items: center;
     margin-bottom: 45px;
+    z-index: 1;
 `
 
 export const containerInput_Button = styled.div `
@@ -41,6 +42,7 @@ export const FormContainer = styled.form `
     gap: 60px;
     width: 500px;
     padding: 50px 20px;
+    z-index: 1;
 
     justify-content: center;
     margin-bottom: 40px;
@@ -49,6 +51,7 @@ export const FormContainer = styled.form `
 
 export const Title = styled.h1 `
     font-size: 55px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.13);
     color: var(--Primary-Color);
     font-weight: 700;
     letter-spacing: normal;

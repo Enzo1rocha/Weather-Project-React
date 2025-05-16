@@ -10,7 +10,7 @@ function ForgoutAccount({Text, navigateTo, isLogin}) {
             <s.Link onClick={() => {navigate(navigateTo)}}>
                 {Text}
             </s.Link>
-            {isLogin && <s.Link>
+            {isLogin && <s.Link onClick={() => navigate('/forgot')}>
                 {'Forgot Password'}
             </s.Link>}
         </s.Container>

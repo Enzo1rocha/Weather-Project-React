@@ -5,11 +5,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Register from './pages/register'
 import Login from './pages/login'
 import ForgotPassword from './pages/ForgotPassword'
+import UpdatePassword from './pages/updatePassword'
+import WelcomePage from './pages/WelcomePage'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Register />,
+    element: <WelcomePage />,
   },
   {
     path: "/login",
@@ -18,7 +20,19 @@ const router = createBrowserRouter([
   {
     path: '/forgot',
     element: <ForgotPassword />
-  } 
+  },
+  {
+    path: '/register',
+    element: <Register />
+  },
+  {
+    path: '/forgot/updatePassword',
+    element: <UpdatePassword />
+  },
+  {
+    path: '/navbar',
+    element: <Navbar />
+  },
 ])
 
 createRoot(document.getElementById('root')).render(

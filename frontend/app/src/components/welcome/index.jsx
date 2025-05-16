@@ -29,9 +29,9 @@ function Welcome({img, FormTitle, LabelText, Text, ShowNameInput, isLogin, navig
 
 
                     <s.ContainerWithInputs>
-                        {ShowNameInput && <InputComponent LabelText="Name" />}
-                        <InputComponent LabelText="Email" />
-                        <InputComponent LabelText="Password" />
+                        {ShowNameInput && <InputComponent type={'text'} LabelText="Name" />}
+                        <InputComponent type={'email'} LabelText="Email" />
+                        <InputComponent type={'password'} LabelText="Password" />
                     </s.ContainerWithInputs>
                     
                     <Sign_Container LabelText={LabelText} />

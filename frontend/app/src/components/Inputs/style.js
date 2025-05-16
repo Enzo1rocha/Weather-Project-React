@@ -15,6 +15,7 @@ export const Label = styled.label`
     color: var(--Secundary-Color-Transparent);
     font-size: 20px;
     font-weight: 600;
+    white-space: nowrap;
 `
 
 export const Field = styled.input`
