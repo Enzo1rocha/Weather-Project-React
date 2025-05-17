@@ -7,32 +7,23 @@ import Login from './pages/login'
 import ForgotPassword from './pages/ForgotPassword'
 import UpdatePassword from './pages/updatePassword'
 import WelcomePage from './pages/WelcomePage'
+import NavBar from './components/NavBar'
+import Layout from './components/layout/layout'
+
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <WelcomePage />,
+    path: '/',
+    element: <Layout />,
+    children: [
+      { path: '/', element: <WelcomePage /> },
+    ]
   },
-  {
-    path: "/login",
-    element: <Login />
-  },
-  {
-    path: '/forgot',
-    element: <ForgotPassword />
-  },
-  {
-    path: '/register',
-    element: <Register />
-  },
-  {
-    path: '/forgot/updatePassword',
-    element: <UpdatePassword />
-  },
-  {
-    path: '/navbar',
-    element: <Navbar />
-  },
+  { path: '/navbar', element: <NavBar /> },
+  { path: '/login', element: <Login /> },
+  { path: '/register', element: <Register />},
+  { path: '/forgot', element: <ForgotPassword /> },
+  { path: '/forgot/updatePassword', element: <UpdatePassword /> },
 ])
 
 createRoot(document.getElementById('root')).render(
