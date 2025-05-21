@@ -19,7 +19,7 @@ function UpdatePassword() {
                         <InputComponent type={'password'} LabelText="Confirm Password" />
                         <Button value={"Update Password"}/> 
                     </s.ContainerInput>
-                    <BackToLink value={'Update Password'} href={'/login'}></BackToLink>
+                    <BackToLink value={'Back to Login'} href={'/login'}></BackToLink>
                 </s.FormPasswordUpdate>
             </s.Container>
         </Background>

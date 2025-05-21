@@ -10,7 +10,7 @@ function Background({ children }) {
             <s.TopRight src={elementAbstract}></s.TopRight>
             <s.BottomLeft src={elementAbstract}></s.BottomLeft>
             {children}
-        </s.Container>
+            </s.Container>
         </div>
     )
 }

@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Container = styled.div `
-    position: fixed;
+    position: relative;
     top: 0;
     z-index: 999;
     display: flex;
     justify-content: space-between;
-    padding: 5px 50px;
+    padding: 10px 50px;
     align-items: center;
     width: 100%;
     background-color: var(--Secundary-Color);
