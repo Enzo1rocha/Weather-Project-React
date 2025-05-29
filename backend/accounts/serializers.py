@@ -5,9 +5,14 @@ from django.contrib.auth import get_user_model
 from rest_framework import serializers
 from .models import FavoriteLocations, BootLocation
 
-
-
 from dj_rest_auth.registration.serializers import RegisterSerializer
+from dj_rest_auth.serializers import LoginSerializer
+
+
+class CustomLoginSerializer(LoginSerializer):
+    username = None
+    email = serializers.EmailField(required=True)
+    password = serializers.CharField(required=True, trim_whitespace=False)
 
 
 class CustomRegisterSerializer(RegisterSerializer):
